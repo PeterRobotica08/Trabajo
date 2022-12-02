@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aplicacion 1</title>
+</head>
+<body>
+    <style>
+        body{
+            background-color: darkgreen;
+            font-size: xx-large;
+            color: rgb(255, 255, 255);
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+    </style>
+   <h1>¿Cual es la temperatura?</h1>
+   <input type="number" max="150" min="-150" id="temperatura">
+   <input type="button" onclick=comprobacion() value="Comprobar estado">
+    <script>
+        function comprobacion(){
+            var temp = document.getElementById("temperatura").value
+            if(temp < 0){
+                alert("el agua esta en estado solido")   
+                }else{
+                    if(temp < 100){
+                        alert("el agua esta en estado liquido")
+                        }else{
+                            alert("el agua esta en estado gaseoso")
+                        }   
+                    }
+                }               
+    </script>
+</body>
+</html>
