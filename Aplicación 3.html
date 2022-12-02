@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 3</title>
+</head>
+<body>
+    <style>
+        body{
+            background-color: rgb(247, 0, 255);
+            font-size: xx-large;
+            color: rgb(255, 255, 255);
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+    </style>
+    <h1>Tu edad</h1><input type="number" id="num1">
+    <h1>La edad de tu amigo</h1><input type="number" id="num2"><br>
+    <input type="button" value="¿quien es mayor?" onclick="comprobacion()">
+    <script>
+        function comprobacion(){
+            var edad1 = document.getElementById("num1").value;
+            var edad2 = document.getElementById("num2").value;
+            if(edad1>edad2){
+                alert("eres mayor que tu amigo")
+            }else{
+                if(edad1=edad2){
+                    alert("teneis la misma edad")
+            }else{
+                if(edad1<edad2){
+                    alert("tu amigo es mayor que tu")
+                }
+            }
+        }
+    }
+    </script>
+</body>
+</html>
